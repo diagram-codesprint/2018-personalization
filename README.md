@@ -1,4 +1,4 @@
-==Potential Questions to Explore
+== Potential Questions to Explore
 * what needs to be personalized at the per-user level?
 * Are there things that can be generalized to users with similar functional abilities
 * What is the representation format of what we wish to store about these personalization? JSON format? Additional thoughts: (key value pairs, entire data models to differentiate between types of personalizations, etc.)

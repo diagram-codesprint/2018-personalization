@@ -15,35 +15,37 @@ A **river** [replace '**river**' with image and sound] sings a beautiful **song*
 Each of you a bordered **country** [replace '**country**' with image and sound] |,|->*punctuation* delicate and strangely made proud|.|->*punctionation*
 
 
-## Vertical layout |
+## Vertical layout 
+
+phrase | .
 ------------ 
-A -> define part of speech |
-| |
-v |
-**river** - noun [replace '**river**' with image and sound] |
-| |
-v
-sings -> define part of speech
-|
-v
-a -> define part of speech
-|
-v
-beautiful -> define part of speech
-|
-v
-**song** [replace '**song**' with image and sound] |,|->*punctuation*
-|
-v
-come -> define part of speech
-|
-v
-rest -> define part of speech
-|
-v
-here -> define part of speech
-|
-v
+A -> define part of speech | >
+| | .
+v | .
+**river** - noun [replace '**river**' with image and sound] | .
+| | .
+v | .
+sings -> define part of speech | .
+| | .
+v | .
+a -> define part of speech | .
+| | .
+v | .
+beautiful -> define part of speech | .
+| | .
+v | .
+**song** [replace '**song**' with image and sound] |,|->*punctuation* | .
+| | .
+v | .
+come -> define part of speech | .
+| | .
+v | .
+rest -> define part of speech | .
+| | .
+v | .
+here -> define part of speech | .
+| | .
+v | .
 by -> define part of speech
 |
 v

@@ -10,9 +10,9 @@ Excerpt from *On the Pulse of Morning* by Maya Angelou
 
 ## Horizontal layout ##
 
-A -> **river** [replace '**river**' with image and sound] -> sings -> a beautiful **song** [replace '**song**' with image and sound] |,| *punctuation* come -> rest -> here -> by -> my -> **side** [replace '**side**' with image and sound]|.| *punctionation*
+A -> **river** [replace '**river**' with image and sound] -> sings -> a -> beautiful -> **song** [replace '**song**' with image and sound] |,| *punctuation* -> come -> rest -> here -> by -> my -> **side** [replace '**side**' with image and sound]|.| *punctionation*
 
-Each -> o -> you -> a -> bordered -> **country** [replace '**country**' with image and sound] |,| *punctuation* delicate -> and -> strangely -> made -> proud|.| *punctionation*
+Each -> of -> you -> a -> bordered -> **country** [replace '**country**' with image and sound] |,| *punctuation* -> delicate -> and -> strangely -> made -> proud|.| *punctionation*
 
 
 ## Vertical layout ##

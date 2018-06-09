@@ -31,7 +31,7 @@ here | define part of speech
 by | define part of speech
 my | define part of speech
 **side**. | [replace '**side**' with image and sound] 
-. | .
+ | 
 Each | define part of speech
 of | define part of speech
 you | define part of speech

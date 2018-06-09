@@ -61,18 +61,21 @@ var tags = new pos.Tagger()
   .tag(words)
   .map(function(tag){
     let newWord =   document.createElement('span');
+    newWord.classList.add('wordPart')
     let newWordIndex = keyValue.indexOf(tag[1]);
+    let curDef;
   
       for (var i = 0; i <keyValue.length; i++) {
           // This if statement depends on the format of your array
           if (keyValue[i][0] == tag[1]) {
             
     newWord.setAttribute('title',keyValue[i][1])
+    curDef=keyValue[i][1];
           }
       }
 
 
-    newWord.innerHTML =  tag[0];
+    newWord.innerHTML =  tag[0]+'------------'+curDef;
     document.getElementById('output').appendChild(newWord);
     
     return tag[0] + '/' + tag[1];})

@@ -1,6 +1,6 @@
 # Extract and identify parts of speech from a phrase with a visual and auditory representation for nouns
 
-# #Sample text
+## Sample text
 
 A River sings a beautiful song, Come rest here by my side.
 

@@ -10,9 +10,9 @@ Each of you a bordered country, delicate and strangely made proud.
 
 ## Horizontal layout
 
-A **River** [replace 'river' with image and sound] sings a beautiful song [replace 'song' with image and sound] |,| *punctuation* Come rest here by my side|.| *punctionation*
+A **river** [replace '**river**' with image and sound] sings a beautiful **song** [replace '**song**' with image and sound] |,|->*punctuation* Come rest here by my side|.|->*punctionation*
 
-Each of you a bordered **country** [replace 'river' with image and sound] |,| *punctuation* delicate and strangely made proud|.| *punctionation*
+Each of you a bordered **country** [replace '**country**' with image and sound] |,|->*punctuation* delicate and strangely made proud|.|->*punctionation*
 
 
 ## Vertical layout

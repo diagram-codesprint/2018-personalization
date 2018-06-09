@@ -17,35 +17,30 @@ Each of you a bordered **country** [replace '**country**' with image and sound] 
 
 ## Vertical layout
 
-A - part of speech
-
+A -> preposition
+|
+v
 river - noun
 
-sings
+sings - verb
 
-a
+a - preposition
 
-belong
+beautiful -> adjective
 
-song |,| noun |comma|
+song -> noun |,|->punctuation - common
 
-a
+come -> verb
 
-beautiful
+rest -> verb
 
-song  |,|
+here -> adjective
 
-come
+by -> adjective
 
-rest
+my -> pronoun
 
-here
-
-by
-
-my 
-
-side |.|
+side -> noun |.|->punctuation - period
 
 
 Each
@@ -56,9 +51,9 @@ you
 
 a 
 
-bordered 
+bordered -> adjective
 
-country |,| 
+country -> noun |,| 
 
 delicate 
 

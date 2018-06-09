@@ -42,4 +42,4 @@ delicate | define part of speech
 and | define part of speech
 strangely | define part of speech
 made | define part of speech
-proud | define part of speech.
+proud. | define part of speech

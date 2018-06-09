@@ -14,7 +14,7 @@ A river sings a beautiful song, come rest here by my side.
 
 Each of you a bordered country, delicate and strangely made proud.
 
-## Vertical layout
+### Vertical layout
 
 A - part of speech
 

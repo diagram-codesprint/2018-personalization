@@ -2,19 +2,20 @@
 
 ## Sample text
 
-A River sings a beautiful song, Come rest here by my side.
-
-Each of you a bordered country, Delicate and strangely made proud
-
-Excerpt from On the Pulse of Morning by Maya Angelou
-
-### Horizontal layout
-
 A river sings a beautiful song, come rest here by my side.
 
 Each of you a bordered country, delicate and strangely made proud.
 
-### Vertical layout
+- Excerpt from *On the Pulse of Morning* by Maya Angelou
+
+## Horizontal layout
+
+A **River** [replace 'river' with image and sound] sings a beautiful song [replace 'song' with image and sound] |,| *punctuation* Come rest here by my side|.| *punctionation*
+
+Each of you a bordered **country** [replace 'river' with image and sound] |,| *punctuation* delicate and strangely made proud|.| *punctionation*
+
+
+## Vertical layout
 
 A - part of speech
 

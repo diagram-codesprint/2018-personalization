@@ -1,11 +1,19 @@
 
 import React, { Component } from 'react';
 import pos from 'pos';
+import unirest from 'unirest';
+import GoogleImageSearch from 'free-google-image-search';
 import './App.css';
+
 
 class App extends Component {
 
+ 
+  
+
 onSubmit(){
+
+  let searchImg;
   let Data = document.getElementById('myData').value
 console.log(Data);
 let keyValue = [
@@ -54,7 +62,7 @@ let keyValue = [
 [")", "Right paren"]     
   
 ];
-
+let key1;
 console.log(keyValue[0]);
 var words = new pos.Lexer().lex(Data);
 var tags = new pos.Tagger()
@@ -64,7 +72,7 @@ var tags = new pos.Tagger()
     newWord.classList.add('wordPart')
     let newWordIndex = keyValue.indexOf(tag[1]);
     let curDef;
-  
+    key1 = tag[1];
       for (var i = 0; i <keyValue.length; i++) {
           // This if statement depends on the format of your array
           if (keyValue[i][0] == tag[1]) {
@@ -76,15 +84,41 @@ var tags = new pos.Tagger()
 
 
     newWord.innerHTML =  tag[0]+'------------'+curDef;
-    document.getElementById('output').appendChild(newWord);
+
+    function queryApi(x){
+
+      fetch('https://pixabay.com/api/?key=9244050-7c4261e5054ffec03e1344930&q='+x+'&image_type=photo&per_page=3')
+      .then(function(response) {
+        return response.json();
+      })
+      .then(function(myJson) {
+        console.log(key1)
+        if( tag[1] === "NN" ||  tag[1]=="NNS" ||  tag[1]=="NNPS" ||  tag[1] =="NNP"){
+          let newImage = document.createElement('img');
+          // console.log(myJson.hits[0].webformatURL);
+          newImage.setAttribute('src',myJson.hits[0].webformatURL)
+        
+      document.getElementById('output').appendChild(newImage);
+        }
     
+    
+      });
+      
+    }
+    document.getElementById('output').appendChild(newWord);
+    queryApi(tag[0]);
+
+ 
+
     return tag[0] + '/' + tag[1];})
   .join(' ');
   console.log(tags)
 
+
 }
 
   render() {
+
     return (
       <div className="App">
   <textarea className="styleText" id="myData" ></textarea>

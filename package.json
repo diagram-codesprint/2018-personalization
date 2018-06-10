@@ -3,10 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "free-google-image-search": "^1.0.0",
+    "google-images": "^2.1.0",
+    "google-ims": "^1.1.4",
     "pos": "^0.4.2",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
-    "react-scripts": "1.1.4"
+    "react-scripts": "1.1.4",
+    "unirest": "^0.5.1"
   },
   "scripts": {
     "start": "react-scripts start",

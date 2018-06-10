@@ -1,8 +1,6 @@
 
 import React, { Component } from 'react';
 import pos from 'pos';
-import unirest from 'unirest';
-import GoogleImageSearch from 'free-google-image-search';
 import './App.css';
 
 

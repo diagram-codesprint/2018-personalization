@@ -69,6 +69,7 @@ var tags = new pos.Tagger()
   .tag(words)
   .map(function(tag){
     let newWord =   document.createElement('span');
+    let wordImage =   document.createElement('span');
     newWord.classList.add('wordPart')
     let newWordIndex = keyValue.indexOf(tag[1]);
     let curDef;
@@ -78,12 +79,14 @@ var tags = new pos.Tagger()
           if (keyValue[i][0] == tag[1]) {
             
     newWord.setAttribute('title',keyValue[i][1])
+
     curDef=keyValue[i][1];
           }
       }
 
-
-    newWord.innerHTML =  tag[0]+'------------'+curDef;
+      wordImage.innerHTML =  tag[0];
+      wordImage.setAttribute('class',tag[0]+ ' textExample')
+    newWord.innerHTML =  tag[0]+'  ------------  '+curDef;
 
     function queryApi(x){
 
@@ -95,17 +98,31 @@ var tags = new pos.Tagger()
         console.log(key1)
         if( tag[1] === "NN" ||  tag[1]=="NNS" ||  tag[1]=="NNPS" ||  tag[1] =="NNP"){
           let newImage = document.createElement('img');
-          // console.log(myJson.hits[0].webformatURL);
+          newImage.classList.add('imageResize');
           newImage.setAttribute('src',myJson.hits[0].webformatURL)
-        
-      document.getElementById('output').appendChild(newImage);
-        }
+          newImage.setAttribute('alt',tag[0])
+          newImage.setAttribute('title',tag[0]+' '+curDef)
+          let newWord2 =   document.createElement('span');
+          newWord2.innerHTML=  tag[0];
+          // if(!document.querySelector('.'+tag[0]).hasChildNodes()){
+            console.log(
+              document.querySelector('.'+tag[0]).hasChildNodes()
+            )
+           
+ document.querySelector('.'+tag[0]).appendChild(newImage);
+        // }
+      }
     
     
       });
       
     }
     document.getElementById('output').appendChild(newWord);
+   
+
+      document.getElementById('outputImage').appendChild(wordImage);
+    
+
     queryApi(tag[0]);
 
  
@@ -124,6 +141,7 @@ var tags = new pos.Tagger()
   <textarea className="styleText" id="myData" ></textarea>
   <div id="output"className="textReadOut"></div>
   <button onClick={this.onSubmit}>Submit</button>
+  <div id="outputImage"className="imageOutput"></div>
       </div>
     );
   }
